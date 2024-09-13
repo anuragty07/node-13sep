@@ -5,7 +5,7 @@ const usercontroller=require('../controllers/usercontroller')
 router.get('/users',(req,res)=>{
     usercontroller.getAllUsers(req,res)
 })
-router.get('/user,:id',(req,res)=>{
+router.get('/user,/:id',(req,res)=>{
     usercontroller.getParticularUser(req,res)
 })
 module.exports=router;
